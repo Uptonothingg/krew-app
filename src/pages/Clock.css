@@ -1,0 +1,21 @@
+.clock-wrap { min-height: 100vh; background: #1a1a1a; display: flex; align-items: center; justify-content: center; }
+.clock-card { background: #fff; border-radius: 20px; padding: 2.5rem 2rem; width: 100%; max-width: 340px; text-align: center; }
+.clock-logo { font-size: 26px; font-weight: 700; color: #1a1a1a; margin-bottom: 1.5rem; }
+.clock-mode { display: flex; gap: 4px; background: #f5f4f0; border-radius: 10px; padding: 4px; margin-bottom: 1.5rem; }
+.mode-btn { flex: 1; padding: 8px; border: none; border-radius: 8px; font-size: 13px; font-weight: 500; cursor: pointer; background: transparent; color: #888; }
+.mode-btn.active { background: #fff; color: #1a1a1a; box-shadow: 0 1px 3px rgba(0,0,0,0.1); }
+.clock-prompt { font-size: 14px; color: #888; margin-bottom: 1.25rem; }
+.pin-dots { display: flex; gap: 12px; justify-content: center; margin-bottom: 1.25rem; }
+.pin-dot { width: 14px; height: 14px; border-radius: 50%; border: 2px solid #ddd; transition: all 0.15s; }
+.pin-dot.filled { background: #1a1a1a; border-color: #1a1a1a; }
+.clock-success { background: #eaf3de; color: #27500a; border-radius: 8px; padding: 10px; font-size: 13px; margin-bottom: 1rem; font-weight: 500; }
+.clock-error { background: #fff0f0; color: #c0392b; border-radius: 8px; padding: 10px; font-size: 13px; margin-bottom: 1rem; }
+.keypad { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; margin-bottom: 1rem; }
+.key-btn { padding: 16px; font-size: 20px; font-weight: 500; background: #f5f4f0; border: none; border-radius: 10px; cursor: pointer; color: #1a1a1a; transition: background 0.1s; }
+.key-btn:hover:not(:disabled) { background: #e8e7e0; }
+.key-btn:active { background: #ddd; }
+.key-btn.key-empty { background: transparent; cursor: default; }
+.submit-btn { width: 100%; padding: 13px; background: #1a1a1a; color: #fff; border: none; border-radius: 10px; font-size: 15px; font-weight: 500; cursor: pointer; margin-bottom: 12px; }
+.submit-btn:disabled { background: #ccc; cursor: not-allowed; }
+.back-link { background: none; border: none; color: #aaa; font-size: 13px; cursor: pointer; }
+.back-link:hover { color: #555; }
