@@ -1,23 +1,39 @@
 .page-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 1.5rem; }
 .page-title { font-size: 22px; font-weight: 600; color: #1a1a1a; margin: 0 0 4px; }
 .page-sub { font-size: 13px; color: #888; margin: 0; }
+.header-actions { display: flex; gap: 8px; }
 .btn-primary-sm { background: #1a1a1a; color: #fff; border: none; border-radius: 8px; padding: 9px 16px; font-size: 13px; font-weight: 500; cursor: pointer; }
 .btn-primary-sm:hover { background: #333; }
 .btn-primary-sm:disabled { background: #999; cursor: not-allowed; }
+.btn-secondary-sm { background: transparent; color: #1a1a1a; border: 0.5px solid #ddd; border-radius: 8px; padding: 9px 16px; font-size: 13px; font-weight: 500; cursor: pointer; }
+.btn-secondary-sm:hover { background: #f5f4f0; }
+.alert-success { background: #eaf3de; color: #27500a; border: 0.5px solid #c0dd97; border-radius: 8px; padding: 10px 14px; font-size: 13px; margin-bottom: 1rem; }
+.alert-error { background: #fff0f0; color: #c0392b; border: 0.5px solid #f5c6c6; border-radius: 8px; padding: 10px 14px; font-size: 13px; margin-bottom: 1rem; }
 .form-card { background: #fff; border: 0.5px solid #e8e7e0; border-radius: 12px; padding: 1.5rem; margin-bottom: 1.5rem; }
-.form-title { font-size: 15px; font-weight: 600; margin: 0 0 1rem; }
-.form-error { background: #fff0f0; color: #c0392b; border: 0.5px solid #f5c6c6; border-radius: 8px; padding: 10px 12px; font-size: 13px; margin-bottom: 1rem; }
+.form-title { font-size: 15px; font-weight: 600; margin: 0 0 4px; }
+.form-desc { font-size: 13px; color: #888; margin: 0 0 1rem; }
 .staff-form .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 12px; }
 .field label { display: block; font-size: 12px; font-weight: 500; color: #555; margin-bottom: 5px; }
 .field input, .field select { width: 100%; padding: 9px 12px; border: 0.5px solid #ddd; border-radius: 8px; font-size: 13px; outline: none; box-sizing: border-box; }
 .field input:focus, .field select:focus { border-color: #888; }
+.section-header { font-size: 11px; font-weight: 600; color: #888; text-transform: uppercase; letter-spacing: 0.05em; padding: 6px 0; margin-bottom: 8px; border-bottom: 0.5px solid #e8e7e0; }
 .staff-list { display: flex; flex-direction: column; gap: 8px; }
 .staff-card { background: #fff; border: 0.5px solid #e8e7e0; border-radius: 12px; padding: 1rem 1.25rem; display: flex; align-items: center; gap: 12px; }
 .staff-avatar { width: 40px; height: 40px; border-radius: 50%; background: #e6f1fb; color: #0c447c; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 600; flex-shrink: 0; }
+.manager-avatar { background: #eeedfe; color: #3c3489; }
 .staff-info { flex: 1; }
-.staff-name { font-size: 14px; font-weight: 500; color: #1a1a1a; }
+.staff-name { font-size: 14px; font-weight: 500; color: #1a1a1a; display: flex; align-items: center; gap: 6px; }
 .staff-meta { font-size: 12px; color: #888; margin-top: 2px; }
 .staff-pin { font-size: 12px; color: #888; background: #f5f4f0; padding: 4px 10px; border-radius: 6px; }
+.you-tag { font-size: 11px; background: #f0efeb; color: #888; padding: 2px 6px; border-radius: 4px; font-weight: 400; }
+.badge { font-size: 11px; padding: 3px 10px; border-radius: 20px; font-weight: 500; }
+.badge-owner { background: #1a1a1a; color: #fff; }
+.badge-admin { background: #e6f1fb; color: #0c447c; }
+.badge-viewer { background: #f1efe8; color: #5f5e5a; }
+.role-select { padding: 5px 10px; border: 0.5px solid #ddd; border-radius: 6px; font-size: 12px; outline: none; cursor: pointer; }
 .deactivate-btn { background: none; border: 0.5px solid #ddd; color: #888; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; }
 .deactivate-btn:hover { border-color: #c0392b; color: #c0392b; }
 .loading { padding: 3rem; text-align: center; color: #888; font-size: 14px; }
+.edit-btn { background: none; border: 0.5px solid #ddd; color: #555; padding: 6px 12px; border-radius: 6px; font-size: 12px; cursor: pointer; }
+.edit-btn:hover { border-color: #888; color: #1a1a1a; }
+.staff-card.editing { border-color: #1a1a1a; }

@@ -4,6 +4,8 @@ import Login from './pages/Login';
 import Schedule from './pages/Schedule';
 import Staff from './pages/Staff';
 import Clock from './pages/Clock';
+import Team from './pages/Team';
+import SetPassword from './pages/SetPassword';
 
 function PrivateRoute({ children }) {
   const { user, loading } = useAuth();
@@ -18,8 +20,10 @@ function App() {
         <Routes>
           <Route path="/login" element={<Login />} />
           <Route path="/clock" element={<Clock />} />
+          <Route path="/set-password" element={<SetPassword />} />
           <Route path="/" element={<PrivateRoute><Schedule /></PrivateRoute>} />
           <Route path="/staff" element={<PrivateRoute><Staff /></PrivateRoute>} />
+          <Route path="/team" element={<PrivateRoute><Team /></PrivateRoute>} />
         </Routes>
       </BrowserRouter>
     </AuthProvider>
